@@ -31,7 +31,7 @@ public class SpringRestHandsonApplication {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("country.xml");
 
-        Country country = context.getBean("country", Country.class);
+        Country country = context.getBean("in", Country.class);
 
         LOGGER.debug("Country : {}", country);
 
