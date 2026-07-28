@@ -1,0 +1,19 @@
+Angular Project File Purpose Notes (Hands-On 1)
+
+angular.json         - Angular CLI workspace config: build/serve targets, assets, styles, budgets.
+tsconfig.json        - Root TypeScript compiler options shared by app and tests.
+tsconfig.app.json    - App-specific TS config; extends tsconfig.json, points to src/main.ts.
+package.json         - npm project manifest: dependencies, devDependencies, npm scripts (start/build/test).
+src/main.ts          - Application entry point; bootstraps the root AppComponent with appConfig.
+src/app/app.config.ts- Standalone app configuration: providers (router, zone change detection).
+src/app/app.component.ts - Root component; hosts <app-header> and <router-outlet>.
+src/index.html       - Single HTML page shell that hosts <app-root>; scripts injected by the build.
+
+Build output:
+- ng build produces dist/student-course-portal/ containing the compiled bundles.
+- main-*.js holds the compiled application code.
+
+Budgets (angular.json > architect > build > configurations > production > budgets):
+- maximumWarning: threshold above which the CLI logs a warning about bundle size.
+- maximumError: threshold above which the build fails outright.
+Used to keep bundle size under control.

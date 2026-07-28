@@ -1,0 +1,9 @@
+.home { max-width: 800px; }
+.stats { display: flex; gap: 1rem; margin: 1.5rem 0; }
+.stat { background: white; padding: 1rem 1.25rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.08); flex: 1; display: flex; flex-direction: column; }
+.stat span { color: #6b7280; font-size: .85rem; }
+.stat strong { font-size: 1.5rem; margin-top: .25rem; }
+.actions button { background: #2563eb; color: white; border: none; padding: .6rem 1.1rem; border-radius: 6px; cursor: pointer; }
+.actions button:disabled { background: #9ca3af; cursor: not-allowed; }
+.search { margin-top: 1.5rem; }
+.search input { padding: .5rem; margin-left: .5rem; border: 1px solid #d1d5db; border-radius: 4px; }
